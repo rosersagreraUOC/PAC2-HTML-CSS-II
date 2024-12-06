@@ -1,12 +1,13 @@
-@use "sass:color";
+// Nueva paleta de colores
+$primary-color: #442cbc;  // color1
+$secondary-color: #a4ebfc;  // color2
+$background-color: #140474;  // color3
+$accent-color: #625aa3;  // color4
+$text-color: #b9acc7;  // color5
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+// Tipografía
+$font-family-base: 'Arial, sans-serif';
+$font-size-base: 16px;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-
-$mqMinWidth: 420px;
+// Espaciados
+$spacing-base: 1rem;

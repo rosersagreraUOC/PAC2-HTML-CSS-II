@@ -1,0 +1,11 @@
+@use './variables' as vars;
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: vars.$primary-color;
+}
+
+p {
+  margin-bottom: vars.$spacing-base;
+  line-height: 1.5;
+}

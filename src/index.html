@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jornadas de Seguridad Informática</title>
-  <link rel="stylesheet" href="./styles/main.css">
+  <title>Jornades de Seguretat Informàtica</title>
+  <link rel="stylesheet" href="./assets/styles/main.scss">
 </head>
 <body>
-  <header>
-    <h1>Jornadas de Seguridad Informática 2024</h1>
-    <p>Descubre y aprende de los mejores expertos en el sector.</p>
-  </header>
-  <main>
-    <nav>
+  <header class="header">
+    <div class="logo">
+      <img src="./assets/images/logo.png" alt="Logo de les Jornades">
+    </div>
+    <nav class="nav">
       <ul>
-        <li><a href="./page2.html">Ponentes</a></li>
-        <li><a href="./page3.html">Información</a></li>
-        <li><a href="./page4.html">Contacto</a></li>
+        <li><a href="./views/page2.html">Ponents</a></li>
+        <li><a href="./views/page3.html">Activitats</a></li>
+        <li><a href="./views/page4.html">Contacte</a></li>
       </ul>
     </nav>
+  </header>
+
+  <main class="main">
     <section class="poster">
-      <h2>Participa. Aprende. Crece.</h2>
-      <p>Únete a nuestras jornadas para disfrutar de talleres y actividades emocionantes.</p>
+      <h1 class="poster-title">Jornades de Seguretat Informàtica 2024</h1>
+      <p class="poster-subtitle">Descobreix. Participa. Aprèn.</p>
+      <div class="poster-links">
+        <a href="./views/page2.html" class="btn btn-primary">Més informació</a>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>Contacto: info@jornadas2024.com</p>
+
+  <footer class="footer">
+    <p>&copy; 2024 - Jornades de Seguretat Informàtica</p>
   </footer>
 </body>
 </html>

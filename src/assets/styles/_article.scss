@@ -1,0 +1,18 @@
+@use './variables' as vars;
+
+.info {
+  padding: 2rem;
+
+  blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid $secondary-color; // Borde secundario
+    color: $accent-color; // Color de texto del bloque citado
+  }
+
+  img {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}

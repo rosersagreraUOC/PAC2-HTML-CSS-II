@@ -1,0 +1,29 @@
+@use './variables' as vars;
+
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+
+  .speaker {
+    flex: 1 1 calc(33.333% - 1rem);
+    text-align: center;
+    border: 1px solid vars.$primary-color;
+    padding: 1rem;
+    background-color: vars.$accent-color; // Fondo de las tarjetas
+    color: vars.$text-color; // Texto
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      color: vars.$primary-color; // Títulos
+      margin-bottom: 0.5rem;
+    }
+  }
+}
