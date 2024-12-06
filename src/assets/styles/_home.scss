@@ -1,25 +1,54 @@
 @use './variables' as vars;
 
 .poster {
+  height: 100vh; /* Ocupa tota l'altura de la finestra */
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  place-items: center;
+  grid-template-rows: 1fr auto auto; /* La imatge ocupa 1fr, seguit del text i el botó */
+  justify-items: center;
+  align-items: center;
   text-align: center;
-  padding: 2rem;
+  margin: 0; /* Elimina marges externs */
+  padding: 0; /* Elimina marges interns */
+
   background: linear-gradient(135deg, vars.$primary-color, vars.$secondary-color);
-  color: vars.$text-color;
 
-  nav ul {
-    display: flex;
-    gap: 1rem;
+  /* Imatge central */
+  .poster-image {
+    width: 100%; /* Amplada completa del contenidor */
+    height: 100%; /* Alçada completa del contenidor */
+    object-fit: cover; /* La imatge manté la proporció i cobreix tot l'espai */
+  }
 
-    li {
-      list-style: none;
+  /* Títol */
+  .poster-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: white;
+  }
 
-      a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
+  /* Subtítol */
+  .poster-subtitle {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    color: white;
+  }
+
+  /* Botons */
+  .poster-links {
+    margin-top: 1.5rem;
+
+    .btn {
+      background-color: vars.$accent-color;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: darken(vars.$accent-color, 10%);
       }
     }
   }

@@ -1,29 +1,44 @@
 @use './variables' as vars;
 
 .speakers {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout responsiu */
+  gap: vars.$spacing-base; /* Separació entre elements */
   padding: 2rem;
 
   .speaker {
-    flex: 1 1 calc(33.333% - 1rem);
-    text-align: center;
+    background-color: vars.$background-color;
     border: 1px solid vars.$primary-color;
-    padding: 1rem;
-    background-color: vars.$accent-color; // Fondo de las tarjetas
-    color: vars.$text-color; // Texto
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 50%;
-      margin-bottom: 1rem;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease-in-out;
     }
 
-    h2 {
-      color: vars.$primary-color; // Títulos
-      margin-bottom: 0.5rem;
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: vars.$spacing-base;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      color: vars.$primary-color;
+      margin-bottom: vars.$spacing-base;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: vars.$text-color;
     }
   }
 }

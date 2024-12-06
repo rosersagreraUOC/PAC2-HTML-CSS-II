@@ -4,34 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jornades de Seguretat Informàtica</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- CSS principal -->
   <link rel="stylesheet" href="./assets/styles/main.scss">
 </head>
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="./assets/images/logo.png" alt="Logo de les Jornades">
+  <header class="header container-fluid">
+    <div class="row align-items-center py-3">
+      <div class="col-6 col-md-3">
+        <img src="./assets/images/logo.png" alt="Logo de les Jornades" class="logo img-fluid">
+      </div>
+      <nav class="col-6 col-md-9 text-end">
+        <ul class="nav justify-content-end">
+          <li class="nav-item"><a href="./views/page2.html" class="nav-link">Ponents</a></li>
+          <li class="nav-item"><a href="./views/page3.html" class="nav-link">Activitats</a></li>
+          <li class="nav-item"><a href="./views/page4.html" class="nav-link">Contacte</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="./views/page2.html">Ponents</a></li>
-        <li><a href="./views/page3.html">Activitats</a></li>
-        <li><a href="./views/page4.html">Contacte</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main class="main">
-    <section class="poster">
-      <h1 class="poster-title">Jornades de Seguretat Informàtica 2024</h1>
-      <p class="poster-subtitle">Descobreix. Participa. Aprèn.</p>
-      <div class="poster-links">
-        <a href="./views/page2.html" class="btn btn-primary">Més informació</a>
+  <main class="main container-fluid">
+    <section class="poster d-grid align-items-center text-center py-5">
+      <div>
+        <img src="./assets/images/event.jpg" alt="Poster Image" class="poster-image img-fluid">
+        <h1 class="poster-title mt-4">Jornades de Seguretat Informàtica 2024</h1>
+        <p class="poster-subtitle mt-3">Descobreix. Participa. Aprèn.</p>
+        <div class="poster-links mt-4">
+          <a href="./views/page2.html" class="btn btn-primary">Més informació</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>&copy; 2024 - Jornades de Seguretat Informàtica</p>
+  <footer class="footer container-fluid text-center py-4">
+    <div>
+      <p class="mb-2">&copy; 2024 - Jornades de Seguretat Informàtica</p>
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a href="./index.html" class="nav-link">Front Page</a></li>
+        <li class="nav-item"><a href="./views/page2.html" class="nav-link">Page Two</a></li>
+        <li class="nav-item"><a href="./views/page3.html" class="nav-link">Page Three</a></li>
+        <li class="nav-item"><a href="./views/page4.html" class="nav-link">Page Four</a></li>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>

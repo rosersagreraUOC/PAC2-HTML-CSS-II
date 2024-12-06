@@ -1,13 +1,13 @@
-// Nueva paleta de colores
-$primary-color: #442cbc;  // color1
-$secondary-color: #a4ebfc;  // color2
-$background-color: #140474;  // color3
-$accent-color: #625aa3;  // color4
-$text-color: #b9acc7;  // color5
 
-// Tipografía
-$font-family-base: 'Arial, sans-serif';
+$primary-color: #0056b3;
+$secondary-color: #6c757d;
+$accent-color: #ffc107;
+$background-color: #f8f9fa;
+$text-color: #212529;
+
+$font-family-base: 'Roboto', Arial, sans-serif;
 $font-size-base: 16px;
-
-// Espaciados
 $spacing-base: 1rem;
+
+$card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$card-hover-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);

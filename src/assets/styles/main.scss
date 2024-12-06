@@ -1,7 +1,7 @@
-@import './variables';
-@import './layout';
-@import './typography';
-@import './home';
-@import './speakers';
-@import './article';
-@import './creative';
+@import './variables'; // Variables de colors, fonts, etc.
+@import './layout';    // Estructures globals com header, footer, etc.
+@import './typography'; // Estils de text
+@import './home';       // Estils específics de la portada
+@import './speakers';   // Estils específics de la pàgina dels ponents
+@import './article';    // Altres components
+@import './creative';   // Formularis i altres elements creatius

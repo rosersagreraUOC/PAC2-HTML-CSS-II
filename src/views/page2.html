@@ -4,33 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ponentes</title>
-  <!-- <link rel="stylesheet" type="text/css" href="../assets/styles/main.scss"> -->
   <link rel="stylesheet" href="../assets/styles/main.scss">
-
-
 
 </head>
 <body>
-  <header>
-    <h1>Ponentes Destacados</h1>
+  <header class="header container-fluid">
+    <div class="row align-items-center py-3">
+      <div class="col-6 col-md-3">
+        <img src="../assets/images/logo.png" alt="Logo de las Jornadas" class="logo img-fluid">
+      </div>
+      <nav class="col-6 col-md-9 text-end">
+        <ul class="nav justify-content-end">
+          <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="./page3.html" class="nav-link">Actividades</a></li>
+          <li class="nav-item"><a href="./page4.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
-    <section class="speakers">
-      <article class="speaker">
-        <img src="../assets/images/speaker1.jpg" alt="Ponente 1">
-        <h2>Ponente 1</h2>
-        <p>Experto en ciberseguridad y análisis de riesgos.</p>
-      </article>
-      <article class="speaker">
-        <img src="../assets/images/speaker2.jpg" alt="Ponente 2">
-        <h2>Ponente 2</h2>
-        <p>Especialista en criptografía moderna.</p>
-      </article>
 
+
+  <main class="main container">
+    <h1 class="text-center mt-5">Speakers</h1>
+    <section class="speakers row mt-4">
+      <article class="speaker col-md-4">
+        <div class="card text-center">
+          <img src="../assets/images/speaker1.jpg" alt="Speaker One" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">Speaker One</h2>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+          </div>
+        </div>
+      </article>
+      <article class="speaker col-md-4">
+        <div class="card text-center">
+          <img src="../assets/images/speaker2.jpg" alt="Speaker Two" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">Speaker Two</h2>
+            <p class="card-text">Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+          </div>
+        </div>
+      </article>
+      <article class="speaker col-md-4">
+        <div class="card text-center">
+          <img src="../assets/images/speaker2.jpg" alt="Speaker Three" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">Speaker Three</h2>
+            <p class="card-text">A small river named Duden flows by their place and supplies it.</p>
+          </div>
+        </div>
+      </article>
     </section>
+    <p class="text-center mt-5">If necessary, more speakers can be added.</p>
   </main>
-  <footer>
-    <p>&copy; 2024 Jornadas de Seguridad Informática</p>
+
+  <footer class="footer container-fluid text-center py-4">
+    <p>&copy; 2024 - Jornadas de Seguridad Informática</p>
   </footer>
 </body>
 </html>
