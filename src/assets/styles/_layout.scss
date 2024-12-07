@@ -1,40 +1,8 @@
-// body {
-//   font-family: $font-family-base;
-//   margin: 0;
-//   padding: 0;
-//   color: $text-color;
-//   background-color: $background-color;
-// }
-
-// .header {
-//   background-color: $primary-color;
-//   color: white;
-
-//   .nav-link {
-//     color: white;
-//     &:hover {
-//       color: $accent-color;
-//     }
-//   }
-// }
-
-// .footer {
-//   background-color: $secondary-color;
-//   color: white;
-
-//   .nav-link {
-//     color: white;
-//     &:hover {
-//       color: $accent-color;
-//     }
-//   }
-// }
-
 @use './variables' as vars;
 
 .header {
-  background-color: vars.$primary-color; /* Color de fons del header */
-  color: white; /* Text en blanc */
+  background-color: vars.$primary-color; 
+  color: white; 
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -74,3 +42,7 @@
     }
   }
 }
+
+
+
+

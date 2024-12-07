@@ -2,8 +2,8 @@
 
 .speakers {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout responsiu */
-  gap: vars.$spacing-base; /* Separació entre elements */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*  responsiu */
+  gap: vars.$spacing-base; 
   padding: 2rem;
 
   .speaker {
@@ -42,3 +42,6 @@
     }
   }
 }
+
+
+
